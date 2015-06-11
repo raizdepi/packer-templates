@@ -2,7 +2,7 @@
 set -e
 
 cd /tmp
-apt-get install -y fuse-libs
+apt-get install -y fuse-utils
 mkdir -p /mnt/cdrom
 mount -o loop /home/vagrant/linux.iso /mnt/cdrom
 tar zxvf /mnt/cdrom/VMwareTools-*.tar.gz -C /tmp/
