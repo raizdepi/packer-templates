@@ -1,2 +1,3 @@
-# datastax-vagrant
-vagrant projects to test the apps
+# Packer-templates
+
+Packer-templates to VMWare Fusion
