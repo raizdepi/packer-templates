@@ -1,0 +1,5 @@
+# Packer cache
+/packer_cache
+
+# Images
+*.box
