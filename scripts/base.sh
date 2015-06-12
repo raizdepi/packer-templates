@@ -27,4 +27,4 @@ EOF
 update-grub
 
 # Correct stdin: is not a tty
-sed -i '/tty/!s/mesg n/tty -s \\&\\& mesg n/' /root/.profile
+sed -i '/tty/!s/mesg n/tty -s \&\& mesg n/' /root/.profile
