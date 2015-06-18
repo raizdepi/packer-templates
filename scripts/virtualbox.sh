@@ -1,3 +1,5 @@
+set -xe
+
 if test -f .vbox_version ; then
   # The netboot installs the VirtualBox support (old) so we have to remove it
   if test -f /etc/init.d/virtualbox-ose-guest-utils ; then
