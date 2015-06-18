@@ -1,5 +1,8 @@
-# exit in error
-set -e
+
+set -xe
+
+###
+# vmware tools
 
 cd /tmp
 apt-get install -y fuse-utils
@@ -21,3 +24,13 @@ fi
 /tmp/vmware-tools-distrib/vmware-install.pl -d
 rm /home/vagrant/linux.iso
 umount /mnt/cdrom
+
+sed -i.bak 's/answer AUTO_KMODS_ENABLED_ANSWER no/answer AUTO_KMODS_ENABLED_ANSWER yes/g' /etc/vmware-tools/locations
+sed -i.bak 's/answer AUTO_KMODS_ENABLED no/answer AUTO_KMODS_ENABLED yes/g' /etc/vmware-tools/locations
+
+echo "vmhgfs" >> /etc/modules
+
+###
+# open-vm-tools
+#apt-get install -y open-vm-tools
+
