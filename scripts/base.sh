@@ -1,4 +1,4 @@
-set -e
+set -xe
 
 # Update the box
 apt-get -y update
