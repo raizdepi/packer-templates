@@ -1,4 +1,4 @@
-set -e
+set -xe
 
 # Set up Vagrant.
 
